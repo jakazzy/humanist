@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "git submodule update --force --recursive --init --remote && hugo --minify -b $URL"
 
 [context.production.environment]
 HUGO_VERSION = "v0.75.1/extended"
